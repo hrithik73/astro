@@ -10,6 +10,8 @@
 
 # production
 /build
+#API KEY
+/src/apis/API_KEY.js
 
 # misc
 .DS_Store

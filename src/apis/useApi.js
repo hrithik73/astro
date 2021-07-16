@@ -14,7 +14,6 @@ export const useAPI = () => {
 
         const MARS_URL = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?${checkDate}&api_key=${API_KEY}&page=${page}`
         const FINAL_URL = earthDate == null ? APOD_URL : MARS_URL
-        console.log(FINAL_URL)
         try {
             const response = await axios.get(FINAL_URL)
             setData(response.data)

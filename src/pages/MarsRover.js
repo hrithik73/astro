@@ -19,14 +19,12 @@ const MarsRover = () => {
 
  const [data, getData] = useAPI()
  const [date, setDate] = useState(today)
- console.log(data)
 
  const earthdate = formateDate(date)
 
  useEffect(() => {
   getData(null, earthdate, today, 1)
  }, [date])
- // console.log(typeof (data))
 
  const dateChangeHandler = (date) => {
   setDate(date)
@@ -34,7 +32,6 @@ const MarsRover = () => {
  if (!data)
   return <NotLoaded />
 
- // console.log(data.photos.length)
  return (
   <div className="App" >
    <h3 className="header">Mars Rover Gallery </h3>
@@ -52,4 +49,3 @@ const MarsRover = () => {
 
 export default MarsRover
 
-{/* <p style={{ textAlign: "center" }} >Only Works Full Screen Desktop Browsers for Now</p> */ }

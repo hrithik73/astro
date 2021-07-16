@@ -1,7 +1,8 @@
 
 import React, { useRef } from 'react';
 
-import s from './Image.module.css';
+// import s from './Image.module.css';
+import "../App.css"
 
 const Image = ({ originalImageSrc, smallImageSrc }) => {
 
@@ -17,9 +18,9 @@ const Image = ({ originalImageSrc, smallImageSrc }) => {
 
  return (
   <>
-   <div className={s.master}>
-    <img alt="smallImage" ref={smallRef} className={s.smallImage} src={smallImageSrc} />
-    <img alt="BigImage" ref={imageRef} className={s.bigImage} onLoad={onImageLoad} src={originalImageSrc} />
+   <div className="master">
+    <img alt="smallImage" ref={smallRef} className="smallImage" src={smallImageSrc} />
+    <img alt="BigImage" ref={imageRef} className="bigImage" onLoad={onImageLoad} src={originalImageSrc} />
    </div>
   </>
  )

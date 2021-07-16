@@ -1,10 +1,17 @@
 import React from 'react';
+import ReactLoading from 'react-loading';
+
 import "../App.css"
 
-const NotLoaded = ({ errorMessage }) => {
+const NotLoaded = () => {
     return (
-        <div >
-            <h4 className="error" >Something Went Wrong Refresh</h4>
+        <div className="loading" >
+            <ReactLoading
+                type="cubes"
+                color="#778899"
+                height='100%'
+                width='90%'
+            />
         </div>
     )
 }

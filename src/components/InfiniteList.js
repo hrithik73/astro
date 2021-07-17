@@ -41,9 +41,11 @@ const InfiniteList = ({ initialData, earthDate, today }) => {
   const checkDate = earthDate === today ? "sol=1000" : `earth_date=${earthDate}`
 
   const MARS_URL = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?${checkDate}&api_key=${API_KEY}&page=${page}`
+
   try {
    const response = await axios.get(MARS_URL)
    setPhotos([...photos, ...response.data.photos])
+
   }
   catch (error) {
    // console.error(errorMessage)

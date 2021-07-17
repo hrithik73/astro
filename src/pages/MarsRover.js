@@ -3,14 +3,14 @@ import "../App.css"
 
 import {
  isMobile
-} from "react-device-detect";
-import { useAPI } from "../apis/useApi";
+} from "react-device-detect"
+import { useAPI } from "../apis/useApi"
 import { formateDate } from "../utils/UtilFunctions"
-import InfiniteList from '../components/InfiniteList';
-import DatePicker from '../components/DatePicker';
-import NotLoaded from '../components/NotLoaded';
-import MobileRender from '../components/MobileRender';
-import Footer from '../components/Footer';
+import InfiniteList from '../components/InfiniteList'
+import DatePicker from '../components/DatePicker'
+import NotLoaded from '../components/NotLoaded'
+import MobileRender from '../components/MobileRender'
+import Footer from '../components/Footer'
 
 
 

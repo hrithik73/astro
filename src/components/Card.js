@@ -6,8 +6,6 @@ import "../App.css"
 
 const CardComponent = ({ data }) => {
 
- // console.log(data)
-
  return (
   <div className="card-container" >
    <img className="card-img" alt="" src={data.img_src} />

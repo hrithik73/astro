@@ -4,12 +4,8 @@
   margin: 0px;
   background-color: var(--background-color);
   color: var(--color);
-  --main-bg-color: brown;
-  --card-bg-color: #f3d9b1;
 }
-.body {
-  background-color: red;
-}
+
 .App {
   display: flex;
   width: 100%;
@@ -38,10 +34,7 @@ h4 {
 }
 
 .card-detail-ctn {
-  /* display: flex; */
-  /* background-color: #fff; */
   margin: 1px;
-  /* flex-direction: column; */
 }
 
 .card-img {

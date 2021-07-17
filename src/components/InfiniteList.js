@@ -36,7 +36,7 @@ const InfiniteList = ({ initialData, earthDate, today }) => {
 
  const fetchMoreData = async () => {
   // Fetching More data with ++page and combining with 
-
+  console.log("Inside FetchMoreData")
   setPage(page + 1)
   const checkDate = earthDate === today ? "sol=1000" : `earth_date=${earthDate}`
 
@@ -56,7 +56,7 @@ const InfiniteList = ({ initialData, earthDate, today }) => {
 
  const handleScroll = () => {
   if (window.innerHeight + document.documentElement.scrollTop !== document.documentElement.offsetHeight) return;
-  console.log('Fetching  more list items!');
+  console.log('Fetching  more list items!')
   setFetching(true)
  }
 

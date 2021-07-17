@@ -38,7 +38,7 @@ const APOD = () => {
 
  return (
   <div className="App">
-   <h3 className="header"> Astronomy Picture Of The Day</h3>
+   <h3 className="header">Astronomy Picture Of The Day</h3>
    <h3 className="date">{newDate}</h3>
 
    <DatePicker

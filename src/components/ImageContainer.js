@@ -1,7 +1,6 @@
 
 import React, { useRef } from 'react';
 
-// import s from './Image.module.css';
 import "../App.css"
 
 const Image = ({ originalImageSrc, smallImageSrc }) => {

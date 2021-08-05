@@ -131,8 +131,8 @@ h4 {
 
 .toggle {
   align-self: flex-end;
-  margin-right: 10px;
-  margin-top: 10px;
+  margin-right: 20%;
+  margin-top: 2%;
 }
 
 .toggle.react-toggle--checked .react-toggle-track {

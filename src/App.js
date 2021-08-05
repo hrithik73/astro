@@ -6,7 +6,6 @@ import {
   Link
 } from "react-router-dom";
 
-
 import APOD from './pages/APOD'
 import MarsRover from './pages/MarsRover';
 import logo from "./assets/logo.png"

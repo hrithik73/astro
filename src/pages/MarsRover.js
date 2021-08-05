@@ -24,6 +24,7 @@ const MarsRover = () => {
 
  useEffect(() => {
   getData(null, earthdate, today, 1)
+  // eslint-disable-next-line 
  }, [date])
 
  const dateChangeHandler = (date) => {
@@ -37,7 +38,7 @@ const MarsRover = () => {
    <h3 className="header">Mars Rover Gallery </h3>
    <h3 className="date">{earthdate}</h3>
    <DatePicker date={date} today={today} dateChangeHandler={dateChangeHandler} />
-   <p className="explanation" >Note:-You can surf the images sent from mars by date with details of ROVER and Camera name !! By Default It will Show all the images   </p>
+   <p className="explanation" >You can surf the images sent from mars by date with details of ROVER with Camera Name !! By Default It will Show all the images   </p>
    {isMobile ? <MobileRender /> : (<div className="list-cnt" >
     <InfiniteList initialData={data.photos} earthDate={earthdate} today={today} date={date} />
    </div>)}

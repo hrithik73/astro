@@ -4,6 +4,7 @@ import axios from 'axios';
 import "../App.css"
 import { API_KEY } from '../apis/API_KEY';
 import CardComponent from './Card'
+import InfiniteScroll from "react-infinite-scroll-component"
 import NotLoaded from '../components/NotLoaded';
 
 
@@ -65,9 +66,18 @@ const InfiniteList = ({ initialData, earthDate, today }) => {
  if (photos.length === 0)
   return <h3 style={{ textAlign: "center" }} >No Data Found in this Date! :) Try Another date</h3>
  return (
-  <div className="list" >
-   {photos.map((item) => <div key={item.id + Math.random(Math.floor(1))}  ><CardComponent data={item} /></div>)}
-   {isFetching && <NotLoaded />}
+  <div className="" >
+   <InfiniteScroll
+    dataLength={photos.length}
+    next={fetchMoreData}
+    hasMore={true}
+    loader={<NotLoaded />}
+   >
+    <div className="list" >
+     {photos.map((item) => <div key={item.id + Math.random(Math.floor(1))}  ><CardComponent data={item} /></div>)}
+    </div>
+   </InfiniteScroll>
+   {/* {photos.map((item) => <div key={item.id + Math.random(Math.floor(1))}  ><CardComponent data={item} /></div>)} */}
   </div>
  )
 }

@@ -19,7 +19,6 @@ const MarsRover = () => {
 
  const [data, getData] = useAPI()
  const [date, setDate] = useState(today)
-
  const earthdate = formateDate(date)
 
  useEffect(() => {
